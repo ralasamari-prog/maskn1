@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#383636">
+  <meta name="description" content="نموذج تفاعلي تعريفي لشركة مسكن الراحة العقارية. جميع العقارات والأسعار بيانات تجريبية للعرض فقط.">
+  <title>مسكن الراحة العقارية | نبني الثقة… ونصنع المسكن</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">انتقل إلى المحتوى</a>
+  <div class="preview-bar"><span class="preview-dot"></span> نموذج أولي تفاعلي <span class="preview-separator">|</span> بيانات تجريبية للعرض <span class="preview-desktop">— العقارات والأسعار والصور لا تمثل عروضاً فعلية</span></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="مسكن الراحة العقارية — الرئيسية"><span class="brand-art"><img src="assets/logo-original.png" alt="شعار شركة مسكن الراحة العقارية الأصلي" width="1284" height="1251"></span></a>
+      <nav id="mainNav" class="main-nav" aria-label="التنقل الرئيسي">
+        <a class="nav-active" href="#home">الرئيسية</a><a href="#properties">العقارات</a><a href="#services">خدماتنا</a><a href="#about">من نحن</a><a href="#contact">تواصل معنا</a>
+      </nav>
+      <div class="header-actions"><button class="button button-gold header-cta" data-list-property>اعرض عقارك <span aria-hidden="true">↖</span></button><button id="menuToggle" class="menu-toggle" aria-label="فتح القائمة" aria-controls="mainNav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero-section container" aria-labelledby="hero-title">
+      <div class="hero">
+        <img class="hero-photo" src="assets/hero.jpg" alt="عمارة سكنية حديثة، صورة معمارية توضيحية من البروفايل" fetchpriority="high">
+        <div class="hero-shade"></div><div class="hero-line" aria-hidden="true"></div>
+        <div class="hero-content"><p class="eyebrow light"><span></span>خطوتك الأولى نحو مسكنك</p><h1 id="hero-title">نبني الثقة…<br>ونصنع <span>المسكن.</span></h1><p class="hero-description">لكل طموح مساحة، ولكل حكاية بداية.<br>مع مسكن الراحة، تبدأ رحلتك العقارية بثقة.</p><a class="button button-cream" href="#properties">اكتشف العقارات <span aria-hidden="true">←</span></a></div>
+        <div class="hero-caption"><span class="hero-caption-line"></span><span>تفاصيل تصنع فرقاً.<br><small>صورة توضيحية من بروفايل الشركة</small></span></div>
+      </div>
+      <div class="search-panel">
+        <div class="search-heading"><div class="purpose-tabs" id="purposeTabs" role="group" aria-label="الغرض من العقار"><button type="button" class="active" data-purpose="" aria-pressed="true">جميع العقارات</button><button type="button" data-purpose="بيع" aria-pressed="false">للبيع</button><button type="button" data-purpose="إيجار" aria-pressed="false">للإيجار</button></div><span class="search-note"><span class="tiny-dot"></span> ابحث في العقارات التجريبية</span></div>
+        <form id="searchForm" class="search-form">
+          <input type="hidden" name="purpose" value="">
+          <div class="field keyword-field"><label for="keyword">عمّ تبحث؟</label><input id="keyword" name="keyword" type="search" placeholder="كلمة أو وصف للعقار"></div>
+          <div class="field"><label for="city">المدينة</label><select id="city" name="city"><option value="">جميع المدن</option><option>أبها</option><option>خميس مشيط</option><option>الرياض</option></select></div>
+          <div class="field"><label for="type">نوع العقار</label><select id="type" name="type"><option value="">جميع الأنواع</option value="شقة">شقة</option><option value="فيلا">فيلا</option><option value="أرض">أرض</option><option value="تجاري">تجاري</option></select></div>
+          <fieldset class="price-field"><legend>نطاق السعر <span>(ر.س)</span></legend><div class="price-inputs"><input name="minPrice" aria-label="السعر من" type="number" min="0" step="any" placeholder="من"><span>—</span><input name="maxPrice" aria-label="السعر إلى" type="number" min="0" step="any" placeholder="إلى"></div></fieldset>
+          <button class="button button-charcoal search-button" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg>ابحث عن عقار</button>
+        </form>
+      </div>
+      <div class="values-strip"><span>من أبها، تمتد رؤيتنا</span><span class="strip-divider"></span><span>الشفافية</span><span>المصداقية</span><span>الجودة</span><span class="values-tail">قيم نبني عليها كل خطوة <span aria-hidden="true">↙</span></span></div>
+    </section>
+
+    <section id="properties" class="section container" aria-labelledby="properties-title">
+      <div class="section-heading"><div><p class="eyebrow">مساحات تستحق الاكتشاف</p><h2 id="properties-title">اختر ما يشبه تطلعاتك</h2><p class="section-description">تصفّح نماذج متنوعة، وتخيّل خطوتك القادمة.</p></div><button id="showAll" class="text-link">استعرض جميع العقارات <span aria-hidden="true">←</span></button></div>
+      <div class="results-toolbar"><p><span class="demo-label">بيانات تجريبية للعرض</span> <span id="resultCount" role="status" aria-live="polite"></span></p><div class="result-actions"><button id="clearFilters" class="clear-filters" type="button">مسح التصفية</button><label for="sortProperties" class="sr-only">ترتيب العقارات</label><select id="sortProperties"><option value="featured">الترتيب الافتراضي</option><option value="price-asc">السعر: من الأقل للأعلى</option><option value="price-desc">السعر: من الأعلى للأقل</option></select></div></div>
+      <div id="propertyGrid" class="property-grid"></div>
+      <p class="properties-disclaimer">جميع الأسماء والأسعار والمواصفات أمثلة افتراضية. الصور توضيحية وليست صوراً لعقارات معروضة للبيع أو الإيجار.</p>
+    </section>
+
+    <section class="categories-section container" aria-labelledby="categories-title"><div class="category-intro"><p class="eyebrow">مساحة لكل احتياج</p><h2 id="categories-title">ما الذي تبحث عنه؟</h2></div><div class="category-grid">
+      <button class="category-card" data-category="شقة"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 42V9h28v33M5 42h38M18 42V32h12v10M17 17h3m8 0h3m-14 8h3m8 0h3"/></svg><span>شقق سكنية<small>بداية لحكاية جديدة</small></span><b aria-hidden="true">↖</b></button>
+      <button class="category-card" data-category="فيلا"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="m5 24 19-16 19 16M10 21v21h28V21M20 42V29h9v13M8 42h33M34 16V8h6v13"/></svg><span>فلل<small>مساحة أوسع للراحة</small></span><b aria-hidden="true">↖</b></button>
+      <button class="category-card" data-category="أرض"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="m5 34 18-8 20 8-18 10zM24 28V7m0 0h14l-5 6 5 6H24M13 30l19 10"/></svg><span>أراضٍ<small>هنا تبدأ رؤيتك</small></span><b aria-hidden="true">↖</b></button>
+      <button class="category-card" data-category="تجاري"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 42V16h14V7h18v35M4 42h40M29 42V31h6v11M14 23h3m-3 7h3m12-16h4m-4 8h4"/></svg><span>عقارات تجارية<small>عنوان لطموحك</small></span><b aria-hidden="true">↖</b></button>
+    </div></section>
+
+    <section id="services" class="services-section" aria-labelledby="services-title"><div class="container services-layout"><div class="services-intro"><p class="eyebrow light">معك في كل خطوة</p><h2 id="services-title">خبرات متكاملة.<br><span>رؤية واحدة.</span></h2><p>من الفكرة إلى البناء، ومن التسويق إلى الوساطة. خدمات تجمع احتياجاتك العقارية في مكان واحد.</p><a href="#contact" class="text-link light-link">لنتحدث عن احتياجك <span aria-hidden="true">←</span></a><div class="services-mark" aria-hidden="true"><span></span><span></span><span></span></div></div><div class="services-grid">
+      <article class="service-item"><span class="service-number">٠١</span><h3>المقاولات والبناء</h3><p>تنفيذ المشاريع السكنية والتجارية، والتخطيط الهندسي والإشراف وإدارة المشاريع.</p></article>
+      <article class="service-item"><span class="service-number">٠٢</span><h3>الوساطة العقارية</h3><p>شراء وبيع وتأجير العقارات، وإدارة الأملاك والأصول وإنهاء الإجراءات الرسمية.</p></article>
+      <article class="service-item"><span class="service-number">٠٣</span><h3>التطوير العقاري</h3><p>تطوير مشاريع الإسكان والمخططات، ودراسات الجدوى وإدارة المشاريع التطويرية.</p></article>
+      <article class="service-item"><span class="service-number">٠٤</span><h3>التسويق العقاري</h3><p>تصميم الحملات وإدارة الإعلانات، وتصوير العقارات والتواصل مع العملاء والمستثمرين.</p></article>
+      <article class="service-item"><span class="service-number">٠٥</span><h3>التسويق والإعلام</h3><p>إدارة منصات التواصل والحملات، والإنتاج المرئي وكتابة المحتوى العقاري والتجاري.</p></article>
+      <article class="service-item"><span class="service-number">٠٦</span><h3>الاستشارات العقارية</h3><p>التقييم والتحليل والبحث العقاري، ودراسة الفرص والاستشارات السكنية والتجارية.</p></article>
+    </div></div></section>
+
+    <section id="about" class="section container about-section" aria-labelledby="about-title"><div class="about-visual"><img src="assets/about.jpg" alt="صورة معمارية من بروفايل مسكن الراحة، للاستخدام التعريفي" loading="lazy"><div class="about-note"><span>الثقة أولاً.</span><p>وفي كل تفصيلة، جودة.</p></div><small class="image-credit">صورة من البروفايل التعريفي</small></div><div class="about-content"><p class="eyebrow">تعرّف على مسكن الراحة</p><h2 id="about-title">أساسنا الثقة،<br>وغايتنا راحتك.</h2><p>شركة مسكن الراحة العقارية شركة سعودية تعمل في قطاع العقار والمقاولات والتسويق العقاري. انطلقت من مقرّها الرئيسي بمدينة أبها، لتقدّم حلولاً متكاملة في البناء والوساطة والتطوير والتسويق والاستشارات العقارية.</p><p>نضع العميل في قلب اهتمامنا، ونبني علاقات طويلة الأمد أساسها الثقة والاحترام والإتقان.</p><div class="about-facts"><div><strong>أكثر من ١٢ عاماً</strong><span>من الخبرة، وفق بروفايل الشركة</span></div><div><strong>من مدينة أبها</strong><span>انطلقت حكاية مسكن الراحة</span></div></div><a href="#contact" class="text-link">دعنا نبدأ حكايتك <span aria-hidden="true">←</span></a><small class="source-note">المعلومات التعريفية مستندة إلى بروفايل الشركة، إصدار ٢٠٢٥.</small></div></section>
+
+    <section id="contact" class="contact-section container" aria-labelledby="contact-title"><div class="contact-intro"><p class="eyebrow">خطوة بسيطة، بداية جديدة</p><h2 id="contact-title">لنتحدث عن<br>مساحتك القادمة.</h2><p>تبحث عن مسكن، أو ترغب في عرض عقارك؟<br>شاركنا ما تتطلع إليه.</p><div class="contact-buttons"><button class="button button-charcoal" data-contact="phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m7 3 3 5-3 3c2 3 3 4 6 6l3-3 5 3c-1 4-3 5-6 4C8 19 5 16 3 9 2 6 3 4 7 3Z"/></svg>اتصل بنا</button><button class="button button-outline" data-contact="whatsapp">تواصل عبر واتساب <span aria-hidden="true">↖</span></button></div><p class="contact-placeholder">[رقم التواصل يوضع هنا]</p><span class="contact-demo">أزرار التواصل توضيحية لحين إضافة بيانات الشركة.</span></div><form id="interestForm" class="interest-form"><h3>كيف يمكننا مساعدتك؟</h3><p class="form-note">نموذج اهتمام تجريبي — لا تُرسل أو تُحفظ البيانات.</p><div class="form-row"><div class="field"><label for="fullName">الاسم</label><input id="fullName" name="fullName" autocomplete="off" placeholder="اسمك الكريم" required maxlength="80"></div><div class="field"><label for="phone">رقم الجوال</label><input id="phone" name="phone" type="tel" autocomplete="off" placeholder="رقمك للتواصل" required maxlength="25"></div></div><div class="field"><label for="interest">أرغب في</label><select id="interest" name="interest"><option>شراء عقار</option><option>استئجار عقار</option><option>عرض عقار</option><option>الاستفسار عن خدمة</option></select></div><div class="field"><label for="message">تفاصيل اهتمامك <span class="optional">(اختياري)</span></label><textarea id="message" name="message" rows="3" maxlength="1200" placeholder="أخبرنا عمّا تبحث عنه…"></textarea></div><button type="submit" class="button button-gold">جرّب إرسال اهتمامك <span aria-hidden="true">←</span></button><div id="interestStatus" class="form-status" role="status" aria-live="polite"></div></form></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-top"><div class="footer-brand"><a href="#home" class="brand" aria-label="العودة إلى الرئيسية"><span class="brand-art"><img src="assets/logo-original.png" alt="مسكن الراحة العقارية" loading="lazy" width="1284" height="1251"></span></a><p>نبني الثقة… ونصنع المسكن.</p></div><div class="footer-links"><h3>اكتشف مسكن الراحة</h3><a href="#properties">العقارات</a><a href="#services">خدماتنا</a><a href="#about">من نحن</a></div><div class="footer-links"><h3>نبدأ بالتواصل</h3><button data-contact="phone">[رقم التواصل يوضع هنا]</button><button data-contact="email">[البريد الإلكتروني يوضع هنا]</button><span>[عنوان المكتب يوضع هنا]</span></div><div class="footer-links footer-demo"><h3>مساحة العرض</h3><button class="dashboard-link" data-dashboard>لوحة التحكم <span>تجريبي ↗</span></button><p>تصور أولي لتجربة الموقع وإدارة العقارات.</p></div></div><div class="container footer-bottom"><span>مسكن الراحة العقارية © ٢٠٢٦</span><span>نموذج أولي • بيانات تجريبية للعرض • لا توجد خدمات متصلة</span><a href="#home">العودة للأعلى ↑</a></div></footer>
+
+  <dialog id="propertyDialog" class="modal property-dialog" aria-label="تفاصيل العقار التجريبي"><button class="modal-close" data-close aria-label="إغلاق تفاصيل العقار">×</button><div id="propertyDialogContent"></div></dialog>
+  <dialog id="contactDialog" class="modal contact-dialog" aria-labelledby="contact-dialog-title"><button class="modal-close" data-close aria-label="إغلاق">×</button><p class="eyebrow">معاينة التواصل</p><h2 id="contact-dialog-title">يسعدنا تواصلك</h2><p>هذه روابط نائبة في النموذج الأولي. تُستبدل ببيانات الشركة المعتمدة عند تنفيذ الموقع.</p><div class="placeholder-details"><p>الهاتف وواتساب<br><strong>[رقم التواصل يوضع هنا]</strong></p><p>البريد الإلكتروني<br><strong>[البريد الإلكتروني يوضع هنا]</strong></p></div><p class="form-note">لم يتم إجراء اتصال أو إرسال رسالة.</p><button class="button button-charcoal" data-close>فهمت</button></dialog>
+  <dialog id="listingDialog" class="modal listing-dialog" aria-labelledby="listing-title"><button class="modal-close" data-close aria-label="إغلاق نموذج العقار">×</button><p class="eyebrow">مساحة لعقارك</p><h2 id="listing-title">اعرض عقارك</h2><p class="form-note">نموذج تجريبي لتوضيح الخطوات. لا تُحفظ البيانات ولا يُنشر العقار.</p><form id="listingForm"><div class="field"><label for="propertyTitle">عنوان العقار</label><input id="propertyTitle" name="propertyTitle" placeholder="مثال توضيحي: فيلا عائلية" required maxlength="100"></div><div class="form-row"><div class="field"><label for="propertyType">نوع العقار</label><select id="propertyType" name="propertyType"><option>فيلا</option><option>شقة</option><option>أرض</option><option>تجاري</option></select></div><div class="field"><label for="listingCity">المدينة</label><input id="listingCity" name="city" placeholder="اسم المدينة" required maxlength="60"></div></div><div class="form-row"><div class="field"><label for="ownerName">الاسم</label><input id="ownerName" name="ownerName" placeholder="اسمك الكريم" required maxlength="80" autocomplete="off"></div><div class="field"><label for="ownerPhone">رقم الجوال</label><input id="ownerPhone" name="phone" type="tel" placeholder="رقمك للتواصل" required maxlength="25" autocomplete="off"></div></div><button class="button button-gold" type="submit">معاينة إرسال الطلب <span aria-hidden="true">←</span></button><div id="listingStatus" class="form-status" role="status" aria-live="polite"></div></form></dialog>
+  <dialog id="dashboardDialog" class="modal dashboard-dialog" aria-label="لوحة التحكم التجريبية"><button class="modal-close" data-close aria-label="إغلاق لوحة التحكم">×</button><div id="dashboardContent"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
+
