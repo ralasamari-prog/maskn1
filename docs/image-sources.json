@@ -1,0 +1,124 @@
+[
+  {
+    "file": "hero.jpg",
+    "source": "برروفايل مسكن الراحة العقارية.pdf",
+    "xref": 718,
+    "pdf_pages_one_based": [
+      28,
+      29
+    ],
+    "description_ar": "مشهد معماري دافئ وقت الغروب",
+    "original_dimensions": [
+      2699,
+      1518
+    ],
+    "output_dimensions": [
+      1800,
+      1012
+    ],
+    "size_bytes": 266857,
+    "usage": "صورة توضيحية مستخرجة من بروفايل الشركة؛ ليست دليلاً على عرض عقاري حقيقي",
+    "operations": [
+      "extract embedded image",
+      "resize preserving aspect ratio",
+      "JPEG compression"
+    ]
+  },
+  {
+    "file": "villa.jpg",
+    "source": "برروفايل مسكن الراحة العقارية.pdf",
+    "xref": 586,
+    "pdf_pages_one_based": [
+      13
+    ],
+    "description_ar": "فيلا معاصرة بيضاء وحديقة",
+    "original_dimensions": [
+      7680,
+      4320
+    ],
+    "output_dimensions": [
+      1800,
+      1013
+    ],
+    "size_bytes": 591682,
+    "usage": "صورة توضيحية مستخرجة من بروفايل الشركة؛ ليست دليلاً على عرض عقاري حقيقي",
+    "operations": [
+      "extract embedded image",
+      "resize preserving aspect ratio",
+      "JPEG compression"
+    ]
+  },
+  {
+    "file": "apartments.jpg",
+    "source": "برروفايل مسكن الراحة العقارية.pdf",
+    "xref": 487,
+    "pdf_pages_one_based": [
+      2,
+      3
+    ],
+    "description_ar": "واجهة مبنى شقق معاصر",
+    "original_dimensions": [
+      5760,
+      3840
+    ],
+    "output_dimensions": [
+      1800,
+      1200
+    ],
+    "size_bytes": 670398,
+    "usage": "صورة توضيحية مستخرجة من بروفايل الشركة؛ ليست دليلاً على عرض عقاري حقيقي",
+    "operations": [
+      "extract embedded image",
+      "resize preserving aspect ratio",
+      "JPEG compression"
+    ]
+  },
+  {
+    "file": "community.jpg",
+    "source": "برروفايل مسكن الراحة العقارية.pdf",
+    "xref": 639,
+    "pdf_pages_one_based": [
+      19
+    ],
+    "description_ar": "حي سكني مع مساحات خضراء",
+    "original_dimensions": [
+      4096,
+      4096
+    ],
+    "output_dimensions": [
+      1800,
+      1800
+    ],
+    "size_bytes": 627990,
+    "usage": "صورة توضيحية مستخرجة من بروفايل الشركة؛ ليست دليلاً على عرض عقاري حقيقي",
+    "operations": [
+      "extract embedded image",
+      "resize preserving aspect ratio",
+      "JPEG compression"
+    ]
+  },
+  {
+    "file": "about.jpg",
+    "source": "برروفايل مسكن الراحة العقارية.pdf",
+    "xref": 667,
+    "pdf_pages_one_based": [
+      23
+    ],
+    "description_ar": "مبانٍ سكنية أمام مشهد جبلي",
+    "original_dimensions": [
+      1024,
+      1024
+    ],
+    "output_dimensions": [
+      1024,
+      1024
+    ],
+    "size_bytes": 235597,
+    "usage": "صورة توضيحية مستخرجة من بروفايل الشركة؛ ليست دليلاً على عرض عقاري حقيقي",
+    "operations": [
+      "extract embedded image",
+      "resize preserving aspect ratio",
+      "JPEG compression"
+    ]
+  }
+]
